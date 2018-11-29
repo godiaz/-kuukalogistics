@@ -1,1 +1,25 @@
-// Specific CSS for your home-page
+.home {
+	width: 100%;
+
+	&_section-one {
+		width: 100vw;	
+	}
+
+	&_section-two {
+		height: 100vh;	
+	}
+
+	&_section-three {
+		height: 80vh;
+		background: $primary-color;	
+	}
+
+	&_section-four {
+		height: 100vh;	
+	}
+
+	&_section-five {
+	 	height: 50vh;
+	 	background: $secondary-color;	
+	}
+}

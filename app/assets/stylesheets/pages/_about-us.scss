@@ -1,0 +1,25 @@
+.about-us {
+	width: 100%;
+
+	&_section-one {
+		width: 100%;
+		height: 80vh;	
+	}
+
+	&_section-two {
+		width: 100%;
+		height: 80vh;
+		background: $primary-color;	
+	}
+
+	&_section-three {
+		width: 100%;
+		height: 80vh;	
+	}
+
+	&_section-four {
+		width: 100%;
+		height: 15vh;
+		background: $secondary-color;	
+	}
+}

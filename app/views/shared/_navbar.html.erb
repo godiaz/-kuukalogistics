@@ -1,0 +1,30 @@
+<div class="navbar-hoxton navbar-fixed-top"> 
+  <!-- Logo -->
+  <a href="/" class="navbar-hoxton-brand white-logo">
+    <%= image_tag "kuuka_white-logo.png", alt: "logo" %>
+  </a>
+  <a href="/" class="navbar-hoxton-brand green-logo">
+    <%= image_tag "kuuka_white-green-logo.png", alt: "logo" %>
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-hoxton-right hidden-xs hidden-sm">
+
+    <%= link_to 'home', root_path, class: "navbar-hoxton-item navbar-hoxton-link hoxton-link-hover" %>
+    <%= link_to 'about us', about_us_path, class: "navbar-hoxton-item navbar-hoxton-link hoxton-link-hover" %>
+    <%= link_to 'contact', contact_path, class: "navbar-hoxton-item navbar-hoxton-link hoxton-link-hover" %>
+
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-hoxton-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-hoxton-dropdown-menu">
+        <li> <%= link_to 'home', root_path %></li>
+        <li><%= link_to 'about us', about_us_path %></li>
+        <li><%= link_to 'contact', contact_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>

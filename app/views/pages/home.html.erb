@@ -1,2 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% if mobile? %>  
+<%= render 'mobile-home' %>
+<% else %>
+	<div class="homne">
+		<section class="home_section-one">
+
+			<!-- HOME SVG -->
+			<svg width="100%" height="100%" viewBox="0 0 1440 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 0H1440V532.503L0 650V0Z" fill="#777777"/>
+			<path d="M0 0H1440V532.503L0 650V0Z" fill="url(#paint0_linear)"/>
+			<defs>
+			<linearGradient id="paint0_linear" x1="720" y1="840.493" x2="720" y2="140.141" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#777777"/>
+			<stop offset="1" stop-color="#DBDBDB" stop-opacity="0"/>
+			</linearGradient>
+			</defs>
+			</svg>
+
+		</section>
+		<section class="home_section-two">
+			
+		</section>
+		<section class="home_section-three">
+			
+		</section>
+		<section class="home_section-four">
+			
+		</section>
+		<section class="home_section-five">
+			
+		</section>
+	</div>
+<% end %>
