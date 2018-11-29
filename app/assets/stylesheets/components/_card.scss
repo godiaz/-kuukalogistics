@@ -1,0 +1,42 @@
+.card {
+	height: 400px;
+	width: 300px;
+	min-width: 280px;
+	background: white;
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	margin: 1rem;
+	border-radius: 5px;
+	padding: 0.3rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	& h3 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	& p {
+		margin: 0;
+		font-size: 14px;
+	}
+
+	& a {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 0.35rem 1rem;
+		background: $third-color;
+		border-radius: 50px;
+		color: white;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 4rem;
+
+		&:hover {
+			text-decoration: none;
+			background: $third-color-dark;
+		}
+	}
+}

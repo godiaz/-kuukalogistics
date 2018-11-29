@@ -1,4 +1,4 @@
-<% if mobile? %>  
+<% if mobile? %>   
 <%= render 'mobile-home' %>
 <% else %>
 	<div class="homne">
@@ -24,10 +24,26 @@
 			
 		</section>
 		<section class="home_section-four">
-			
+			<div class="card">
+				<h3>I'm a User</h3>
+				<p><i class="fas fa-check"></i> I need a smart phone</p>
+				<p><i class="fas fa-check"></i>Download app (IOS & Android)</p>
+				<p><i class="fas fa-check"></i>Sign Up at Kuuka.com</p>
+				<p><i class="fas fa-check"></i>Create Gig and bid price</p>
+				<%= link_to 'Learn More', about_us_path %>
+			</div>
+			<div class="card">
+				<h3>I'm a Driver</h3>
+				<p><i class="fas fa-check"></i>I need a Driver's License</p>
+				<p><i class="fas fa-check"></i>Provide an Insurance Policy</p>
+				<p><i class="fas fa-check"></i>Up to date Vehicle Inspection</p>
+				<p><i class="fas fa-check"></i>Own a SmartPhone </p>
+				<%= link_to 'Learn More', about_us_path %>
+			</div>
 		</section>
 		<section class="home_section-five">
-			
+		  <p>We are expanding our community</p>
+		  <p>stay in touch with us <%= link_to "here", contact_path %></p>
 		</section>
 	</div>
 <% end %>

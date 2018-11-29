@@ -1,3 +1,8 @@
+.fa-check {
+	color: $primary-color;
+	padding: 10px;
+}
+
 .home {
 	width: 100%;
 
@@ -15,11 +20,55 @@
 	}
 
 	&_section-four {
-		height: 100vh;	
+		height: 600px;
+		min-height: 600px;
+		background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_home5.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;	
 	}
 
 	&_section-five {
-	 	height: 50vh;
-	 	background: $secondary-color;	
+	 	height: 300px;
+	 	background-image:
+	 		linear-gradient(
+	 			rgba(120,120,120,0.99),
+	 			rgba(120,120,120,0.8),
+	 			),
+	 		url('https://s3.eu-west-2.amazonaws.com/kuuka/images/adventure-backlit-community-207896.jpg');
+	 		background-size: cover;
+	 		background-position: center bottom;
+
+	 		display: flex;
+	 		flex-direction: column;
+	 		justify-content: center;
+	 		align-items: center;	
+
+	 	& p:nth-child(1) {
+	 		color: white;
+	 		margin: 0;
+	 		font-family: $main-font;
+	 		font-weight: 500;
+	 		font-size: 28px;
+	 	}
+
+	 	& p:nth-child(2) {
+	 		color: white;
+	 		margin: 0;
+	 		font-family: $main-font;
+	 		font-weight: 300;
+	 		font-size: 22px;
+	 	}
+
+	 	& a {
+	 		color: white;
+	 		margin: 0;
+	 		font-family: $main-font;
+	 		font-weight: 400;
+	 		font-size: 22px;
+	 	}
 	}
 }

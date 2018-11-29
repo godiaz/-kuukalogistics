@@ -3,6 +3,13 @@
 @import "about-us";
 @import "contact";
 
+.flex-v-h-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 body {
 	background: $secondary-color-light;
 }
