@@ -7,16 +7,94 @@
 	width: 100%;
 
 	&_section-one {
-		width: 100vw;	
+		width: 100vw;
 	}
 
 	&_section-two {
-		height: 100vh;	
+		height: 500px;
+		min-height: 500px;
+		width: 100%;
+		background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_background2.png');
+		background-size: cover; 
+		background-position: bottom;
+		opacity: 0.8;
+
+		& h3 {
+			font-family: $main-font;
+			color: black;
+			border-bottom: 2px solid $primary-color;
+		}
+
+		& div {
+			width: 50%;
+			font-size: 15px;
+			color: $secondary-color;
+			display: flex;
+			flex-direction: column;
+			padding: 3rem;
+		}
+
+		& a {
+			width: 200px;
+			color: white;
+			margin: 1rem 0rem;
+			padding: 0.3rem 0.6rem;
+			background: $third-color;
+			text-align: center;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+			transition: transform 0.5s ease-in-out;
+
+			&:hover {
+				background: $third-color-dark;
+				text-decoration: none;
+				box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+				transform: translateY(-3px);
+			}
+		}	
 	}
 
 	&_section-three {
-		height: 80vh;
-		background: $primary-color;	
+		width: 100%;
+		height: 400px;
+		min-height: 400px;
+		background: $primary-color;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		& img:nth-child(1) {
+			max-width: 210px;
+			height: auto;
+			width: 300px;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+
+		& img:nth-child(2) {
+			max-width: 250px;
+			height: auto;
+			width: 300px;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+
+		& img:nth-child(3) {
+			max-width: 230px;
+			height: auto;
+			width: 300px;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}			
 	}
 
 	&_section-four {
