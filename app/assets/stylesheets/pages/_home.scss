@@ -16,6 +16,46 @@
 		  background-color: $secondary-color;
 		  border-bottom-left-radius: 50% 20%;
 		  border-bottom-right-radius: 50% 20%;
+		  overflow: hidden;
+
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+
+		  	& h3 {
+		  		font-family: $main-font;
+		  		font-weight: 400;
+		  		text-align: center;
+		  		color: white;
+		  		font-size: 36px;
+		  	}
+
+		  	& h4 {
+				font-family: $main-font;
+				font-weight: 300;
+				text-align: center;
+				color: white;
+				font-size: 30px;
+		  	}
+
+		  	& a {
+		  		padding: 1rem;		  		// background: white;
+		  		border-radius: 50px;
+		  		color: white;
+		  		opacity: 1 !important;
+		  	}
+
+		  	& span {
+		  		background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/boxes.png');
+		  		background-size: contain;
+		  		background-repeat: no-repeat;
+		  		width: 400px;
+		  		height: 400px;
+		  		position: absolute;
+		  			left: 5%;
+		  			bottom: -10%;
+		  	}
 		}
 	}
 
