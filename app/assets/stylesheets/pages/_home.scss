@@ -14,19 +14,18 @@
 		height: 500px;
 		min-height: 500px;
 		width: 100%;
-		background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_background2.png');
 		background-size: cover; 
 		background-position: bottom;
 		opacity: 0.8;
 
 		& h3 {
 			font-family: $main-font;
-			color: black;
+			color: $secondary-color;
 			border-bottom: 2px solid $primary-color;
 		}
 
 		& div {
-			width: 50%;
+			width: 100%;
 			font-size: 15px;
 			color: $secondary-color;
 			display: flex;
@@ -60,6 +59,7 @@
 		min-height: 400px;
 		background: $primary-color;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
 
@@ -98,23 +98,32 @@
 	}
 
 	&_section-four {
-		height: 600px;
-		min-height: 600px;
-		background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_home5.png');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
 		display: flex;
-		justify-content: center;
-		align-items: center;	
+		flex-direction: column;
+
+		& h3 {
+			font-family: $main-font;
+			font-weight: 400;
+			font-size: 36px;
+			text-align: center;
+			color: $secondary-color;
+			margin: 3rem;
+		}
+
+		.card-holder {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 
 	&_section-five {
 	 	height: 300px;
 	 	background-image:
 	 		linear-gradient(
-	 			rgba(120,120,120,0.99),
-	 			rgba(120,120,120,0.8),
+	 			rgba(37, 35, 35, 0.99),
+	 			rgba(37, 35, 35, 0.9),
 	 			),
 	 		url('https://s3.eu-west-2.amazonaws.com/kuuka/images/adventure-backlit-community-207896.jpg');
 	 		background-size: cover;

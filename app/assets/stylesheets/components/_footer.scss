@@ -19,7 +19,7 @@
 .footer {
   height: 300px;;
   width: 100%;
-  background: $primary-color;
+  background: $fourth-color;
   position: relative;
 
   &_content {
@@ -68,7 +68,7 @@
       bottom: 15%;
     height: 50px;
     width: 100%;
-    background: $primary-color;
+    background: $fourth-color;
     @extend .flex-v-h-center;
 
     & p:first-child {
@@ -103,7 +103,6 @@
 
         & a:hover {
           text-decoration: none;
-          transform: scale(1.1);
         }
 
     }

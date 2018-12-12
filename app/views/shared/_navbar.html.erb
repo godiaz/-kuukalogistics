@@ -1,11 +1,21 @@
 <div class="navbar-hoxton navbar-fixed-top"> 
   <!-- Logo -->
-  <a href="/" class="navbar-hoxton-brand white-logo">
-    <%= image_tag "kuuka_white-logo.png", alt: "logo" %>
-  </a>
-  <a href="/" class="navbar-hoxton-brand green-logo">
-    <%= image_tag "kuuka_white-green-logo.png", alt: "logo" %>
-  </a>
+
+  <% if controller_name == "pages" && action_name == "home" %>
+      <a href="/" class="navbar-hoxton-brand white-logo">
+        <%= image_tag "kuuka_white-logo.png", alt: "logo" %>
+      </a>
+      <a href="/" class="navbar-hoxton-brand green-logo">
+        <%= image_tag "kuuka_white-green-logo.png", alt: "logo" %>
+      </a>
+    <% else controller_name == "pages" && action_name == "about_us"%>
+      <a href="/" class="navbar-hoxton-brand white-logo">
+        <%= image_tag "kuuka_white-green-logo.png", alt: "logo" %>
+      </a>
+      <a href="/" class="navbar-hoxton-brand green-logo">
+        <%= image_tag "kuuka_white-green-logo.png", alt: "logo" %>
+      </a>
+  <% end %> 
 
   <!-- Right Navigation -->
   <div class="navbar-hoxton-right hidden-xs hidden-sm">

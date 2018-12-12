@@ -4,7 +4,7 @@ function initUpdateNavbarOnScroll() {
   const white = document.querySelector('.white-logo');
   if (navbar) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= window.innerHeight) {
+      if (window.scrollY >= window.innerHeight / 4) {
         green.style.display = "block"
         white.style.display = "none"
         navbar.classList.add("navbar-hoxton-green")

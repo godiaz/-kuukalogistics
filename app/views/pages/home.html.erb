@@ -5,50 +5,62 @@
 		<section class="home_section-one">
 
 			<!-- HOME SVG -->
-			<svg width="100%" height="100%" viewBox="0 0 1440 729" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M0 0H1440V597.223L0 729V0Z" fill="#777777"/>
-			<path d="M0 0H1440V597.223L0 729V0Z" fill="url(#paint0_linear)"/>
-			<defs>
-			<linearGradient id="paint0_linear" x1="720" y1="942.645" x2="720" y2="157.173" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#777777"/>
-			<stop offset="1" stop-color="#DBDBDB" stop-opacity="0"/>
-			</linearGradient>
-			</defs>
+
+			<svg width="100%" height="100%" viewBox="0 0 659 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+			    <defs>
+			        <linearGradient x1="86.9154484%" y1="8.73972644%" x2="1.38552896%" y2="83.1347757%" id="linearGradient-1">
+			            <stop stop-color="#A5A9B4" stop-opacity="0.5" offset="0%"></stop>
+			            <stop stop-color="#697081" stop-opacity="0.5" offset="100%"></stop>
+			        </linearGradient>
+			        <path d="M0,0 L659,0 L659,285 C551.400531,321.454125 443.801937,339.681188 336.204216,339.681188 C228.606496,339.681188 116.538424,321.454125 0,285 L0,0 Z" id="path-2"></path>
+			    </defs>
+			    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			        <g id="Rectangle">
+			            <use fill="#697081" xlink:href="#path-2"></use>
+			            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+			        </g>
+			    </g>
 			</svg>
 
 
 		</section>
 		<section class="home_section-two">
 			<div>
-				<h3> Who We Are</h3>
+				<h3>Who We Are</h3>
 				<p>
-				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br><br> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+				Kuuka Tech is a logistics platform providing freelance drivers and movers with business partners via a mobile services applications. It is committed to providing quality services with innovative technology. The company is connecting personal and business users with thousands drivers ranging from van and man to scooter and bicycle riders to solve real-time moving of goods needs.<br><br> Kuuka aims to provide a faster and more efficient service.  We look forward to working with more partners from different industries and in different fields. 
 				</p>
 				<%= link_to 'About Us', about_us_path %>
 			</div>
 		</section>
 		<section class="home_section-three">
-			<%= image_tag 'https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_icons1.png' %>
-			<%= image_tag 'https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_icons2.png' %>
-			<%= image_tag 'https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_icons3.png' %>
+			<%= image_tag 'https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_icons1.png', class: "col-sm-4" %>
+			<%= image_tag 'https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_icons2.png', class: "col-sm-4" %>
+			<%= image_tag 'https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_icons3.png', class: "col-sm-4" %>
 		</section>
 		<section class="home_section-four">
-			<div class="card">
-				<h3>I'm a User</h3>
-				<p><i class="fas fa-check"></i> I need a smart phone</p>
-				<p><i class="fas fa-check"></i>Download app (IOS & Android)</p>
-				<p><i class="fas fa-check"></i>Sign Up at Kuuka.com</p>
-				<p><i class="fas fa-check"></i>Create Gig and bid price</p>
-				<%= link_to 'Learn More', about_us_path %>
+			<div>
+				<h3>3 Reasons Why We Exist</h3>
 			</div>
-			<div class="card">
-				<h3>I'm a Driver</h3>
-				<p><i class="fas fa-check"></i>I need a Driver's License</p>
-				<p><i class="fas fa-check"></i>Provide an Insurance Policy</p>
-				<p><i class="fas fa-check"></i>Up to date Vehicle Inspection</p>
-				<p><i class="fas fa-check"></i>Own a SmartPhone </p>
-				<%= link_to 'Learn More', about_us_path %>
+			<div class="card-holder container">
+				<div class="card col-xl-4 col-lg-4 col-md-4 ">
+					<div class="card_one">
+					</div>
+					<p>Create and sustain a reliable platform to make logistics supply better.</p>
+				</div>
+				<div class="card">
+					<div class="card_two col-xl-4 col-lg-4 col-md-4 ">
+					</div>
+					<p>Drive innovation through research & development (R&D) and new products.</p>
+				</div>
+				<div class="card">
+					<div class="card_three col-xl-4 col-lg-4 col-md-4">
+					</div>
+					<p>To provide an efficient van hire platform</p>
+				</div>
 			</div>
+
 		</section>
 		<section class="home_section-five">
 		  <p>We are expanding our community</p>

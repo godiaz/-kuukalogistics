@@ -2,6 +2,7 @@
 @import "home";
 @import "about-us";
 @import "contact";
+@import "mobile-home";
 
 .flex-v-h-center {
   display: flex;
@@ -11,7 +12,7 @@
 }
 
 body {
-	background: $secondary-color-light;
+	background: white;
 }
 
 html {
