@@ -3,7 +3,7 @@
   background: transparent;
   transition: all 0.3s ease;
   height: 80px;
-  padding: 0px 60px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,6 +84,7 @@
 
 .fa-bars {
   color: white;
+  font-size: 30px;
 }
 
 .navbar-hoxton-dropdown-menu li > a {
