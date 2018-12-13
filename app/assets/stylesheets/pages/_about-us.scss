@@ -39,11 +39,13 @@
 		justify-content: space-around;
 		align-items: center;
 
-		& span {
+		& span:nth-child(2) {
 			box-shadow: 1px black;
 			width: 550px;
 			height: 350px;
-			background: white;
+			// margin: 1rem;
+			background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/elias.jpg');
+			background-size: cover;
 			position: absolute;
 				top: 80%;
 			border-radius: 3px;
@@ -53,6 +55,17 @@
 			&:hover {
 				transform: scale(1.1)
 			}
+		}
+
+		& span:nth-child(3) {
+			background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/elias.jpg');
+			background-size: cover;
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+			box-shadow: 1px black;
+			position: absolute;
+				top: 80%;
 		}	
 	}
 
@@ -68,6 +81,8 @@
 
 		& p {
 			font-size: 16px;
+			font-family: $main-font;
+			font-weight: 300;
 			color: $secondary-color;
 			padding-bottom: 10px;
 			width: 500px;
@@ -76,34 +91,44 @@
 	}
 
 	&_section-three {
-		width: 100%;
-		background: white;
 
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
-		padding: 2.5rem;
 
-		& h3 {
-			font-size: 22px;
-			color: $secondary-color;
-			padding-bottom: 10px;
-			border-bottom: 2px solid $third-color;
+		& span {
+			background-image: url('https://s3.eu-west-2.amazonaws.com/kuuka/images/kuuka_about-us_icons3.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 500px;
+			height: 30vh;
+			margin: 1rem 1rem 1rem 1rem ;
 		}
 
-		& p {
-			width: 400px;
-			color: $secondary-color;
-			font-size: 15px;
-			line-height: 20px;
-			padding: 1rem;
-		}
+		& div {
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+			margin: 1rem 3rem 3rem 3rem;
+			width: 500px;
 
-		& img {
-			max-width: 350px;
-			height: auto;
-			width: 350px;
+			& h3 {
+				font-size: 30px;
+				color: $secondary-color;
+				margin: 2rem;
+				text-align: left;
+			}
+
+
+			& p {
+				font-size: 16px;
+				font-family: $main-font;
+				font-weight: 300;
+				color: $secondary-color;
+				line-height: 20px;
+			}
+
 		}	
 	}
 
