@@ -31,15 +31,23 @@
     }
 
     &_details {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       font-size: 12px;
       font-family: $main-font;
       font-weight: 300;
       padding: 2rem;
       color: white;
       line-height: 30px;
+
+      & * a {
+        color: white;
+      }
     }
 
     &_legal {
+      width: 100%;
       display: flex;
       flex-direction: column;
       font-size: 12px;
@@ -55,6 +63,18 @@
           text-decoration: none;
           color: white;
         }
+      }
+    }
+
+    &_mobile-details {
+
+      & * div {
+        display: flex;
+      }
+
+      & * p {
+        font-family: $main-font;
+        color: white;
       }
     }
   }
