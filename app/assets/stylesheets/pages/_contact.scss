@@ -2,11 +2,11 @@
 .contact {
 	width: 100%;
 	height: 90vh;
-	background-image: 
+	background-image:
 		linear-gradient(
 			rgba(120,120,120,0.7),
 			rgba(120,120,120,0.7),
-		),	
+		),
 		url('https://s3.eu-west-2.amazonaws.com/kuuka/aerial-asphalt-car-1003868.jpg');
 	background-size: cover;
 	padding-top: 30px;
@@ -19,7 +19,7 @@
 
 
 	& form {
-		
+
 		font-family: 'roboto', sans-serif;
 		width: $width + 60px;
 		margin: 70px auto 0;
@@ -71,11 +71,11 @@
 		  background-repeat: no-repeat;
 		  transition: background 0.3s $cubic;
 		  resize: none;
-		  overflow: hidden; 
+		  overflow: hidden;
 		  &:focus::-webkit-input-placeholder {
 		    color: $base;
-		  }  
-		  &:focus, 
+		  }
+		  &:focus,
 		  &:valid {
 		    box-shadow: none;
 		    outline: none;
@@ -86,7 +86,7 @@
 		      visibility: visible !important;
 		      opacity: 1;
 		    }
-		  }  
+		  }
 		}
 
 		input[type="email"] {
@@ -148,7 +148,7 @@
 		  }
 		}
 
-		button {
+		.contact_form_button {
 		  font-family: 'roboto', sans-serif;
 		  transition: transform 0.2s $cubic,
 		     box-shadow 0.2s $cubic;
@@ -161,7 +161,7 @@
 		  color: white;
 		  margin: 30px 0 0 25px;
 		  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-		  &:hover { 
+		  &:hover {
 		    transform: translateY(-2px);
 		    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
 		  }
