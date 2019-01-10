@@ -2,10 +2,10 @@
 	<form action="https://formspree.io/elias.kuyela@kuukatechnologies.com" method="post">
 	  <h1>Stay in Touch</h1>
 	  <input placeholder="Name" type="text"  value="" required>
-	  <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+	  <input placeholder="Email address" name="email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
 	  <span class="validation-text">Please enter a valid email address.</span>
 	  <div class="flex">
-	    <textarea placeholder="Message" rows="1" required></textarea>
+	    <textarea placeholder="Message" name="message" rows="1" required></textarea>
 	  </div>
 	  <input class="contact_form_button" type="submit" value="Send">
 	</form>
