@@ -24,7 +24,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 
     & p {
       margin: 0;
@@ -78,9 +78,9 @@
       }
     }
   }
-  
+
   &_social-media {
-    
+
     // GRAY LABEL SIZE AND POSITION
     position: absolute;
       bottom: 15%;
@@ -134,13 +134,27 @@
     background: $secondary-color;
     margin: 0;
 
-    & p {
-      width: 100%;
+    & span {
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0;
+      font-size: 12px;
+
+      & a:first-child {
+        color: $light-gray;
+        font-size: 12px;
+        font-weight: lighter;
+        margin: 0 3px;
+      }
+
+      & a:last-child {
+        color: $light-gray;
+        font-size: 12px;
+        font-weight: lighter;
+        margin: 0 6px;
+      }
     }
   }
 }
